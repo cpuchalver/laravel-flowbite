@@ -19,12 +19,12 @@ class ServiceProvider extends \Illuminate\Support\ServiceProvider
 
             // Publishing the views.
             $this->publishes([
-                __DIR__.'/../resources/views' => resource_path('views/vendor/cpuch'),
+                __DIR__.'/../resources/views' => resource_path('views/vendor/laravel-flowbite'),
             ], 'laravel-flowbite-views');
 
             // Publishing assets.
             $this->publishes([
-                __DIR__.'/../assets' => public_path('vendor/cpuch'),
+                __DIR__.'/../assets' => public_path('vendor/laravel-flowbite'),
             ], 'laravel-flowbite-assets');
         }
 
