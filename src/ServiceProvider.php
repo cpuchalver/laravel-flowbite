@@ -72,7 +72,7 @@ class ServiceProvider extends \Illuminate\Support\ServiceProvider
         });
 
         Blade::directive('flowbiteComponentsStyle', function ($expression) {
-            return "<?php echo '<link href=' . asset('vendor/cpuch/css/components.css') . ' rel=\"stylesheet\" />'; ?>";
+            return "<?php echo '<link href=' . asset('vendor/laravel-flowbite/css/components.css') . ' rel=\"stylesheet\" />'; ?>";
         });
     }
 }
