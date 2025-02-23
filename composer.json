@@ -1,0 +1,51 @@
+{
+    "name": "cpuch/laravel-flowbite",
+    "description": "Collections of Laravel components inspired by Flowbite",
+    "version": "0.1.0",
+    "keywords": [
+        "laravel",
+        "flowbite"
+    ],
+    "homepage": "https://github.com/cpuch/laravel-flowbite",
+    "license": "MIT",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Cedric Puchalver",
+            "email": "cedric.puchalver@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "^7.4|^8.0",
+        "illuminate/support": "^8.0|^9.0|^10.0|^11.0"
+    },
+    "require-dev": {
+        "laravel/pint": "^1.21",
+        "orchestra/testbench": "^6.0",
+        "phpunit/phpunit": "^9.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Cpuch\\LaravelFlowbite\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Cpuch\\LaravelFlowbite\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit",
+        "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Cpuch\\LaravelFlowbite\\ServiceProvider"
+            ]
+        }
+    }
+}
